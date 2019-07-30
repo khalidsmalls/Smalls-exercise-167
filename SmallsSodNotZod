@@ -48,10 +48,6 @@ public class SmallsSodNotZod
 	public static final double ITEM_C_PRICE = .99; //per square foot
 	public static final String ITEM_C_COUNT_LABEL = "Decent Sod Orders:"; 
 	
-	public static final String BORDER = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
-	public static final String BORDER2 = "************************************************************";
-	public static final String BORDER3 = "------------------------------------------------------------";
-	
 	public static final String QUIT_LABEL = "Quit";
 	public static final String USER_NAME_LABEL = "User Name:"; 
 	public static final String ITEM_NAME_LABEL = "Item Name:"; 
