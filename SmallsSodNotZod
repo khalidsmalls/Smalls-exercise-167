@@ -330,28 +330,37 @@ public class SmallsSodNotZod
 	//display customer report
 	public static void displayCustomerReport(int borrowedHowManyItems, double borrowedCustomerTotal) 
 	{
-		System.out.println("\n\t\tCustomer Report"); 
-		System.out.printf("%s\n", BORDER); 
-		System.out.printf("%-35s%6d\n", HOW_MANY_ITEMS_LABEL, borrowedHowManyItems); 
-		System.out.printf("%-35s%s%8.2f\n", CUSTOMER_TOTAL_LABEL, $, borrowedCustomerTotal); 
-		System.out.println("\n\t\tThank you for your purchase.");
-		System.out.println("\n\t\tHave a nice day!");
-		System.out.printf("%s\n\n", BORDER); 
+		System.out.printf("\n%s\n", "|****************************************************|");
+		System.out.println("|\t\tCUSTOMER REPORT                      |"); 
+		System.out.printf("%s\n", "|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"); 
+		System.out.printf("%-2s%-35s%6d%11s\n", "|", HOW_MANY_ITEMS_LABEL, borrowedHowManyItems, "|"); 
+		System.out.printf("%-2s%-35s%s%8.2f%8s\n", "|", CUSTOMER_TOTAL_LABEL, $, borrowedCustomerTotal, "|"); 
+		System.out.printf("%s%53s", "|", "|");
+		System.out.println("\n|\t\tThank you for your purchase.         |");
+		System.out.printf("%s%53s", "|", "|"); 
+		System.out.println("\n|\t\tHave a nice day!                     |");
+		System.out.printf("%s%53s\n", "|", "|"); 
+		System.out.printf("%s\n\n", "|****************************************************|"); 
 	}//end of display customer report
 	
 	//display final report
-	public static void displayFinalReport(int borrowedMemberCount, int borrowedSeniorCount, int borrowedNoDiscountCount, int borrowedItemACount, int borrowedItemBCount, int borrowedItemCCount, double borrowedGrandTotal) 
+	public static void displayFinalReport(int borrowedMemberCount, int borrowedSeniorCount, int borrowedNoDiscountCount, int borrowedItemACount,
+			int borrowedItemBCount, int borrowedItemCCount, double borrowedGrandTotal) 
 	{
-		System.out.println("\n\t\tFinal Report");
-		System.out.printf("%s\n", BORDER3); 
-		System.out.printf("%-35s%6d\n", MEMBER_COUNT_LABEL, borrowedMemberCount); 
-		System.out.printf("%-35s%6d\n", SENIOR_COUNT_LABEL, borrowedSeniorCount); 
-		System.out.printf("%-35s%6d\n\n", NO_DISCOUNT_COUNT_LABEL, borrowedNoDiscountCount); 
-		System.out.printf("%-35s%6d\n", ITEM_A_COUNT_LABEL, borrowedItemACount);
-		System.out.printf("%-35s%6d\n", ITEM_B_COUNT_LABEL, borrowedItemBCount); 
-		System.out.printf("%-35s%6d\n\n", ITEM_C_COUNT_LABEL, borrowedItemCCount); 
-		System.out.printf("%-35s%s%8.2f\n", GRAND_TOTAL_LABEL, $, borrowedGrandTotal);
-		System.out.printf("%s\n", BORDER3); 
+		System.out.printf("%s\n", "|****************************************************|");
+		System.out.println("|\t\tFINAL REPORT                         |");
+		System.out.printf("%s\n", "|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"); 
+		System.out.printf("%-2s%-35s%6d%11s\n", "|", MEMBER_COUNT_LABEL, borrowedMemberCount, "|"); 
+		System.out.printf("%-2s%-35s%6d%11s\n", "|", SENIOR_COUNT_LABEL, borrowedSeniorCount, "|"); 
+		System.out.printf("%-2s%-35s%6d%11s\n", "|", NO_DISCOUNT_COUNT_LABEL, borrowedNoDiscountCount, "|"); 
+		System.out.printf("%s\n", "|----------------------------------------------------|");
+		System.out.printf("%-2s%-35s%6d%11s\n", "|", ITEM_A_COUNT_LABEL, borrowedItemACount, "|");
+		System.out.printf("%-2s%-35s%6d%11s\n", "|", ITEM_B_COUNT_LABEL, borrowedItemBCount, "|"); 
+		System.out.printf("%-2s%-35s%6d%11s\n", "|", ITEM_C_COUNT_LABEL, borrowedItemCCount, "|"); 
+		System.out.printf("%s\n", "|----------------------------------------------------|");
+		System.out.printf("%-2s%-35s%s%8.2f%8s\n", "|", GRAND_TOTAL_LABEL, $, borrowedGrandTotal, "|");
+		System.out.printf("%s%53s\n",  "|", "|"); 
+		System.out.printf("%s\n", "|****************************************************|"); 
 	}//end of display final report
 	
 	
